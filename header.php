@@ -1,74 +1,58 @@
 
-<!-- header static site -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT Professional | Dashboard</title>
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 
-  <title>IT PROFESSIONAL</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="admin/upload/w3care.png" rel="icon">
-  <link href="admin/upload/w3care.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-  #header .logo img {
-    max-height: 73px;
-  width: 100px;
-}
-</style>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
 </head>
 
-<body>
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a href="index.php" class="logo"><img src="./admin/upload/w3care1.png" height="200px" width="200px"alt="" class="img-fluid"></a>
-      <nav id="navbar" class="navbar order-last order-lg-0"> 
-        <ul>
-          <li><a class="active" href="index.php">Home</a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="resume.php">Resume</a></li>
-          <li><a href="portfolio.php">Portfolio</a></li>
-          <li><a  href="contact.php">Contact</a></li>
-          <li><a  href="privacy.php">Privacy policy</a></li>
-          <li><a  href="term.php">Term&condition</a></li>
-          <li><a  href="faq.php">Faq</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    
-  <div class="header-social-links">
-  
-  <a href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
-  <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a>
-  <a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a>
-  
-</div>
+    <!-- Preloader -->
 
 
-    </div>
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
 
-  </header>
-  <!-- End Header -->
+      </ul>
+
+      <!-- Right navbar links -->
+      
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->

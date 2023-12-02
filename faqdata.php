@@ -1,36 +1,41 @@
 
-<?php  include "header.php" ?> 
+<?php  
+// FAQ DATA 
+include "header.php" ?>
 <?php  include "sidebar.php" ?>
 <div class="content-wrapper">
+
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">ckeditor</h1>
+          <h1 class="m-0">ckeditor FAQ</h1>
         </div><!-- /.col -->
         
       </div>
     </div>
   </div>
+  <!-- /.content-header -->
 
+  <!-- Main content -->
   <section class="content">
 
-        <form action="resume.php" method="POST">
+        <form action="faqdata.php" method="post">
         <?php include "config.php";
-                $sql="select * from resume";
+                $sql="select * from faq";
                 $result=mysqli_query($conn ,$sql);
                 $row=mysqli_fetch_assoc($result);
                 ?>
             <textarea name="editor1" id="editor1" rows="10" cols="80">
-      <!-- RESUME CONTAINT CODE -->
+      
              <?php echo $row['description'];?>
            
             </textarea>
-            
             <button type="submit" name="submit">submit</button>
 
             <script>
-           
+                // Replace the <textarea id="editor1"> with a CKEditor 4
+                // instance, using default configuration.
                 CKEDITOR.replace('editor1');
             </script>
         </form>
@@ -43,10 +48,8 @@ include "config.php";
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   if(isset($_POST['submit']))
   {
-
-
 $description=$_POST["editor1"];
-$sql1 = "UPDATE resume SET description='".$description."' WHERE id=1";
+$sql1 = "UPDATE faq SET description='".$description."' WHERE id=1";
     $result=mysqli_query($conn,$sql1);
    
   }

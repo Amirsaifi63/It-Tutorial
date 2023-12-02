@@ -1,21 +1,98 @@
-<!-- home page or index page start -->
-<?php  include "header.php";?> 
-  <!-- ======= Hero Section ======= -->
-  <?php  
-  include "admin/config.php";
 
-$sql="SELECT `header`, `title` FROM `header_settings`";
-$record=mysqli_query($conn,$sql);
-$rows = array();
-$row = mysqli_fetch_assoc($record);
-  
-  ?>
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-      <h1><?php echo $row['header']?></h1>
-      <h2><?php echo $row['title']?></h2>
-      <a href="about.php" class="btn-about">About Me</a>
+<?php
+// MAIN INDEX PAGE OF IT PROFESSIONAL
+
+
+include "header.php";
+include "sidebar.php";
+
+?>
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h2 class="m-0 text-danger">IT Professional Deshboard</h2>
+          </div><!-- /.col -->
+          <!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
     </div>
-  </section><!-- End Hero -->
-  <?php  include "footer.php";?> 
-<!-- end index page -->
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <?PHP INCLUDE "config.php";
+                $sql="SELECT * FROM project ORDER BY id";
+                 $result=mysqli_query($conn,$sql);       
+                $rowcount=mysqli_num_rows($result);
+                ?>
+        <div class="row">
+          <div class="col-lg-4 col-8">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3><?php echo $rowcount;?></h3>
+
+                <p>PROJECT</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+              <a href="project-index.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          
+          <!-- ./col -->
+          <?PHP INCLUDE "config.php";
+                $sql="SELECT * FROM client ORDER BY id";
+                 $result=mysqli_query($conn,$sql);       
+                $rowcount=mysqli_num_rows($result);
+                ?>
+          <div class="col-lg-4 col-8">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3><?php echo $rowcount;?></h3>
+
+                <p>CLIENT</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+              <a href="client-index.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <?PHP INCLUDE "config.php";
+                $sql="SELECT * FROM category ORDER BY id";
+                 $result=mysqli_query($conn,$sql);       
+                $rowcount=mysqli_num_rows($result);
+                ?>
+          <div class="col-lg-4 col-8">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3><?php echo $rowcount;?></h3>
+
+                <p>CATEGORY</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <a href="category-index.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+</div>
+    </section>
+    <!-- /.content -->
+</div>
+<?php
+include "footer.php";?>

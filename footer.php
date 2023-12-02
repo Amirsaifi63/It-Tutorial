@@ -1,30 +1,51 @@
-<!-- footer of static page -->
-<footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>IT PROFESSIONAL</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-    <a href="privacy.php">PRIVACY</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="term.php">TERM</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="faq.php">FAQ</a>
 
-      </div>
+<!-- MAIN FOOTER CONTAINT -->
+<footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="index.php">IT Professional</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
-<!-- end footer -->
+
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
